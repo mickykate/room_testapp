@@ -1,0 +1,30 @@
+<h1>新規登録</h1>
+
+<%= form_for(@room, url: rooms_path) do |f| %>
+    <div>
+     <%= f.label :title, "施設名" %><br>
+     <%= f.text_field :title %>
+    </div>
+
+    <div> #ここから編集予定　1026
+     <%= f.label :introduction, "施設詳細" %><br>
+     <%= f.text_area :introduction %>
+    </div>
+
+    <div>
+     <%= f.label :room_rate, "料金" %><br>
+     <%= f.text_field :room_rate %>
+    </div>
+
+    <div>
+     <%= f.label :title, "施設名" %><br>
+     <%= f.text_field :title %>
+    </div>
+
+    <div>
+     <ul>
+      <li><%= f.submit "登録完了" %></li>
+      <li><%= link_to "施設登録一覧", rooms_path></li>
+     </ul>
+    </div>
+<% end %>
