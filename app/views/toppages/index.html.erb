@@ -1,1 +1,71 @@
-<h1>ここをトップページとして、デザインしていく</h1>
+<body>
+    <header>
+  <nav class="navbar Navbar">
+    <div class="container-fluid">
+      <a href="/"><img class="Navbar__logo" alt="サイトロゴ" src="/assets/images/common/logo.png"></a>
+
+        <ul class="navbar-nav flex-row align-items-center">
+          <li class="nav-item NavItem">
+            <a class="fw-bold NavItem__link NavItem__link--login" href="/users/sign_in">ログイン</a>
+          </li>
+
+          <li class="nav-item NavItem">
+            <a class="btn fw-bold NavItem__link NavItem__link--register" href="/users/sign_up">新規登録</a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+</header>
+
+    
+
+    <div class="FirstView">
+  <section class="container">
+    <h2 class="FirstView__title">
+      Potepan Shareで<br>
+      まだ体験したことのない<br>
+      旅をしよう
+    </h2>
+
+    <div class="FirstViewSearch">
+      <form action="/" accept-charset="UTF-8" method="get">
+        <input class="form-control FirstViewSearch__input" placeholder="エリア名を入力" type="text" name="area" id="area">
+        <input type="submit" name="commit" value="検索" class="btn FirstViewSearch__button" data-disable-with="検索">
+</form>    </div>
+  </section>
+</div>
+<div class="container">
+  <section class="RecommendAreaSection">
+    <h2 class="RecommendAreaSection__title">
+      おすすめのエリア
+    </h2>
+
+    <div class="RecommendAreas">
+      <a class="RecommendArea RecommendArea--tokyo" href="/assets/home/recommend/tokyo.jpg">
+        <span class="RecommendArea__name RecommendArea__name--ja">東京</span>
+      </a>
+      <a class="RecommendArea RecommendArea--osaka" href="/assets/home/recommend/osaka.jpg">
+        <span class="RecommendArea__name RecommendArea__name--ja">大阪</span>
+      </a>
+      <a class="RecommendArea RecommendArea--kyoto" href="/assets/home/recommend/kyoto.jpg">
+        <span class="RecommendArea__name RecommendArea__name--ja">京都</span>
+      </a>
+      <a class="RecommendArea RecommendArea--sapporo" href="/assets/home/recommend/sapporo.jpg">
+        <span class="RecommendArea__name RecommendArea__name--ja">札幌</span>
+      </a>    
+    </div>
+  </section>
+</div>
+
+      <footer class="Footer">
+  <div class="container-fluid">
+    <a href="/"><img class="Footer__logo" alt="サイトロゴ" src="/assets/images/common/logo.png"></a>
+
+    <p class="Footer__copyright">
+      Copyright © Potepan Share 2024 All rights reserved
+    </p>
+  </div>
+</footer>
+</body>
+
+<!-- htmlここまで編集済み 1027 -->
