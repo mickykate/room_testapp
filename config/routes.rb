@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
-  device_for :users, controllers: {
+  devise_for :users, controllers: {
     sessions: 'users/sessions',
     registraions: 'users/registraions',
   }
   
   get 'rooms/index'
-  devise_for :users
   root 'toppages#index'
 
   resources :rooms, only: [:index, :new, :create, :show, :edit, :update, :destroy]
