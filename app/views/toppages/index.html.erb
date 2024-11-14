@@ -2,7 +2,7 @@
     <header>
   <nav class="navbar Navbar">
     <div class="container-fluid">
-      <a href="/"><img class="Navbar__logo" alt="サイトロゴ" src="common/logo.png"></a>
+      <a href="/"><img class="Navbar__logo" alt="サイトロゴ" src="https://rails-02-sample.herokuapp.com/assets/common/logo.png"></a>
 
         <ul class="navbar-nav flex-row align-items-center">
           <li class="nav-item NavItem">
@@ -41,16 +41,16 @@
     </h2>
 
     <div class="RecommendAreas">
-      <a class="RecommendArea RecommendArea--tokyo" href="home/recommend/tokyo.jpg">
+      <%= image_tag ('toppage/tokyo.jpg') %>
         <span class="RecommendArea__name RecommendArea__name--ja">東京</span>
       </a>
-      <a class="RecommendArea RecommendArea--osaka" href="/assets/home/recommend/osaka.jpg">
+      <%= image_tag ('toppage/osaka.jpg') %>
         <span class="RecommendArea__name RecommendArea__name--ja">大阪</span>
       </a>
-      <a class="RecommendArea RecommendArea--kyoto" href="/assets/home/recommend/kyoto.jpg">
+      <%= image_tag ('toppage/kyoto.jpg') %>
         <span class="RecommendArea__name RecommendArea__name--ja">京都</span>
       </a>
-      <a class="RecommendArea RecommendArea--sapporo" href="/assets/home/recommend/sapporo.jpg">
+      <%= image_tag ('toppage/sapporo.jpg') %>
         <span class="RecommendArea__name RecommendArea__name--ja">札幌</span>
       </a>    
     </div>
@@ -59,7 +59,7 @@
 
       <footer class="Footer">
   <div class="container-fluid">
-    <a href="/"><img class="Footer__logo" alt="サイトロゴ" src="/assets/images/common/logo.png"></a>
+    <a href="/"><img class="Footer__logo" alt="サイトロゴ" src="https://rails-02-sample.herokuapp.com/assets/common/logo.png"></a>
 
     <p class="Footer__copyright">
       Copyright © Potepan Share 2024 All rights reserved
@@ -68,4 +68,4 @@
 </footer>
 </body>
 
-<!-- htmlここまで編集済み 1027 -->
+<!-- htmlここまで編集済み 1114 -->

@@ -139,7 +139,7 @@ ul {
 }
 
 .FirstView {
-    background-image: url(/assets/home/cover-lg.jpg);
+    background-image: url(assets/images/toppage/cover-lg.jpg);
     background-size: cover;
     background-position: 50%;
     width: 100%;
@@ -266,9 +266,16 @@ h2 {
     gap: 32px;
 }
 
-.RecommendArea--tokyo {
-    background-image: url(/assets/home/recommend/tokyo.jpg);
+.RecommendAreas img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover
 }
+
+.RecommendArea--tokyo {
+    background-image: url(toppage/tokyo.jpg);
+}//修正済み 1114
+
 @media screen and (min-width: 600px) and (max-width: 960px) {
     .RecommendArea {
         width: calc(50% - 16px);
