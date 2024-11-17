@@ -40,6 +40,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # protected
 
+  def after_update_path_for(resource)
+    # 自分で設定した「マイページ」へのパス　1116追記
+    user_profile_path(current_user)
+  end
+
   # If you have extra params to permit, append them to the sanitizer.
   # def configure_sign_up_params
   #   devise_parameter_sanitizer.permit(:sign_up, keys: [:attribute])

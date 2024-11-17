@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     registraions: 'users/registraions',
   }
   
+  get 'users/:id/profile', to: 'users#show', as: 'user_profile' #1116追加
   get 'rooms/index'
   root 'toppages#index'
 
